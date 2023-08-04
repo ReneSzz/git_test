@@ -7,17 +7,24 @@ import List from './list.jsx'
 let Animals = ["Dog","Cat","Sheep"];
 
 
-
-
-function App() {
-  const animals = [];
-
-  return (
-    <div>
-      <h1>Animals: </h1>
-      <List  />
-    </div>
-  );
+function Button({text, color})
+{
+  const buttonStyle = {
+    color: color,
+  }
+  return( 
+    <button style={buttonStyle}>{text}</button>
+  )
 }
 
-export default App
+
+
+export default function App()
+{
+return (
+<div>
+<Button text="Click here" color="black"/>
+</div>
+
+);
+}
